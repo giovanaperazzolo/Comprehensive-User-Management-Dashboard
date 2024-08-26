@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management Dashboard</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="main">
+        <input type="text" id="search-input" placeholder="Search by name...">
+        <button id="fetch-users">Fetch Users</button>
+        <button id="export-csv-button">Export to CSV</button>
+    </div>
+    <div id="table-container">
+        <table id="users-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>City</th>
+                    <th>Company</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Linhas da tabela geradas dinamicamente -->
+            </tbody>
+        </table>
+        <div id="pagination"></div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
+
